@@ -1,0 +1,30 @@
+*{
+
+}
+
+html{
+    background-color: rgb(194, 148, 194);
+}
+
+.logo{
+    height: 200px;
+}
+
+.info{
+    align-items: center;
+    text-align: center;
+}
+
+.info h1{
+    color: rgb(255, 72, 0);
+}
+
+.info h2{
+    color: blueviolet;
+}
+
+button{
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+}

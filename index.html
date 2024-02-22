@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Resumen de Calificaciónes</title>
+</head>
+<body>
+    <div class="info">
+        <img src="imagenes/logo.png" alt="logo de la institucion" class="logo">
+        <h1>Bienvenido a tu boleta de calificaciónes</h1>
+        <h2>Alumno: Ricardo Gutiérrez</h2><br><br>
+    </div>
+
+    <div class="notas">
+        <h2>Introduce tus calificaciónes</h2>
+        <input type="number" class="califs" id="calif1">
+        <input type="number" class="califs" id="calif2">
+        <input type="number" class="califs" id="calif3">
+        <input type="number" class="califs" id="calif4">
+        <input type="number" class="califs" id="calif5">
+        <br>
+        <br>
+        <button class="" onclick="mostrarLista()">Enviar</button>
+    </div>
+
+    <div class="opciones">
+        <h2>¿Qué es lo que quieres hacer con ellas?</h2>
+        <h4>Calificaciones:</h4>
+        <ul id="listaCalifs">
+        </ul>
+        <h4>Promedio: <span id="promedio"></span></h4>
+        <button class="prom" onclick="calcularProm()">Calcular promedio</button>
+        <h4>Nota más alta: <span id="nota"></span></h4>
+        <button class="nAlata" onclick="notaAlta()">Obtener nota más alta</button>
+        <h4>¿Hubo alguna nota reprobada?: <span id="reprobado"></span></h4>
+        <button class="repro" onclick="reprobado()">Verificar su hubo reprobado</button>
+    </div>
+
+</body>
+<script src="codigo.js"></script>
+</html>
